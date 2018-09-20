@@ -2,17 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { Food } from './food.component.ts/food.component.ts.component';
+import { FoodComponent } from './food/food.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Food.Component.TsComponent
+    FoodComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,FoodComponent]
 })
 export class AppModule { }
