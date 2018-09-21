@@ -15,4 +15,9 @@
     Interpolation using curly brackets
   </h3>
   <p>{{food.name}} </p>
+  <h3>Button events</h3>
+  Click buttons and check console messages
+  <div> <button [disabled]="isDisabled" (click)="buttonClicked()"> Button calling component method </button></div>
+  <div> <button [disabled]="isDisabled" (click)="buttonClicked(1)"> Button calling passing random data </button></div>
+  <div> <button [disabled]="isDisabled" (click)="buttonClicked($event)"> Button passing event </button></div>
 </div>

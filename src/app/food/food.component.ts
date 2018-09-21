@@ -7,29 +7,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FoodComponent implements OnInit {
 
-  food:any
+  food: any
   numClicks = 0;
-  isDisabled:boolean = false
+  isDisabled: boolean = false
   constructor() { }
 
   ngOnInit() {
     this.food = {
-      name : 'apple',
+      name: 'apple',
       color: 'red',
       servingSize: '100 grams',
-      calories:52,
-      protein:0.3,
+      calories: 52,
+      protein: 0.3,
       fat: 0.2,
       carbs: 13.8
     }
   }
 
-  getFat(){
+  getFat() {
     return this.food.fat;
   }
 
-  buttonClicked(event){
-
+  buttonClicked(data) {
+    console.log('A button click was detected')
+    console.log(data || 'no data passed in')
   }
 
 }
