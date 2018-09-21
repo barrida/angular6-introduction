@@ -7,4 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular 6 - Introduction Project';
+
+  animals = [
+    {
+      species: "bird",
+      name: "tomis",
+      description: "Fistik tus"
+    },
+    {
+      species: "dog",
+      name: "tomis",
+      description: "Fistik tus"
+    },
+    {
+      species: "bird",
+      name: "tomis",
+      description: "Fistik tus"
+    },
+  ]
 }
