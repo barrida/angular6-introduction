@@ -8,6 +8,7 @@ import { BankAccountComponent } from './bank-account/bank-account.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { SportslistComponent } from './sportslist/sportslist.component';
+import { SportdetailComponent } from './sportdetail/sportdetail.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,21 @@ import { SportslistComponent } from './sportslist/sportslist.component';
     AnimalComponent,
     BankAccountComponent,
     HomeComponent,
-    SportslistComponent
+    SportslistComponent,
+    SportdetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent,FoodComponent, AnimalComponent, BankAccountComponent, HomeComponent]
+  bootstrap: [
+    AppComponent,
+    FoodComponent, 
+    AnimalComponent, 
+    BankAccountComponent, 
+    HomeComponent,
+    SportdetailComponent
+  ]
 })
 export class AppModule { }

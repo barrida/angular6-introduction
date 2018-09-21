@@ -18,7 +18,7 @@ export class SportslistComponent implements OnInit {
   }
 
   handleClick(name){
-    this.router.navigateByUrl('/sport/${name}');
+    this.router.navigateByUrl('/sports/' +name);
   }
 
 }
@@ -26,15 +26,15 @@ export class SportslistComponent implements OnInit {
 export const SPORTS_DATA_SOURCE = [
   {
     name: 'golf',
-    description: 'asdasd'
+    description: 'golf description'
   },
   {
     name: 'soccer',
-    description: 'asdasd'
+    description: 'futbol description'
   },
   {
     name: 'tennis',
-    description: 'asdasd'
+    description: 'tennis description'
   }
 ]
 
