@@ -15,14 +15,13 @@ export class AppComponent {
       description: "Fistik tus"
     },
     {
-      species: "dog",
-      name: "tomis",
-      description: "Fistik tus"
-    },
-    {
       species: "bird",
-      name: "tomis",
-      description: "Fistik tus"
-    },
+      name: "tomis kus",
+      description: "Fistik tus tomis"
+    }
   ]
+
+  handleStatusUpdate(animal:any){
+    console.log('${animal.name} is now ${animal.status}')
+  }
 }
