@@ -9,12 +9,6 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class AnimalComponent implements OnInit {
 
   @Input('the-animal')animal: any
-  // animal = { 
-  //   species: "bird",
-  //   name: "tomis",
-  //   description: "Fistik tus"
-  // }
-
   @Output() statusUpdate: EventEmitter<any> = new EventEmitter()
   currentStatus: string;
 
