@@ -1,0 +1,5 @@
+<label for="date-picker"> Pick a date: </label> 
+<input id="date-picker" type ="text" class="form-control" [(ngModel)]= "date" ngbDatepicker #d="ngbDatepicker" >
+<button (click) = "d.open()">Open Datepicker</button>
+<button (click) = "d.toggle()">Toggle Datepicker</button>
+<button (click) = "d.close()">Close Datepicker</button>

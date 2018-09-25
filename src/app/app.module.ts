@@ -12,6 +12,7 @@ import { SportdetailComponent } from './sportdetail/sportdetail.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TypeaheadComponent } from './typeahead/typeahead.component';
 import { FormsModule } from '@angular/forms';
+import { DatePickerComponent } from './date-picker/date-picker.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     SportslistComponent,
     SportdetailComponent,
-    TypeaheadComponent
+    TypeaheadComponent,
+    DatePickerComponent
 
   ],
   imports: [

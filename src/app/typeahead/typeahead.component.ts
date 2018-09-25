@@ -27,4 +27,4 @@ export class TypeaheadComponent implements OnInit {
 
 }
 
-export const FOODS = ["Orange", "Apple", "Rice", "Brokoli"]
+export const FOODS = ["Chicken", "Beef", "Solmon", "Oats",  "Milk", "Orange", "Apple", "Banana", "Rice", "Brokoli"]
