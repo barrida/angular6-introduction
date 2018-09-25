@@ -9,6 +9,9 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { SportslistComponent } from './sportslist/sportslist.component';
 import { SportdetailComponent } from './sportdetail/sportdetail.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TypeaheadComponent } from './typeahead/typeahead.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,20 +21,25 @@ import { SportdetailComponent } from './sportdetail/sportdetail.component';
     BankAccountComponent,
     HomeComponent,
     SportslistComponent,
-    SportdetailComponent
+    SportdetailComponent,
+    TypeaheadComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [
     AppComponent,
-    FoodComponent, 
-    AnimalComponent, 
-    BankAccountComponent, 
+    FoodComponent,
+    AnimalComponent,
+    BankAccountComponent,
     HomeComponent,
-    SportdetailComponent
+    SportdetailComponent,
+    TypeaheadComponent
   ]
 })
 export class AppModule { }
